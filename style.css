@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(192, 195, 250);
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(143, 103, 103);
+  }
+  #searchInput {
+    padding: 5px;
+    font-size: 10px;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    width: 25%; 
+  }
+  
+  #searchInput::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+ 
+  }
+  
+.pokemon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #eccbcb;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+ }
+
+      
+.pokemon-id {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+  }
+.pokemon-id-container {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+  }
+  
+
+.pokemon-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+.pokemon-name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+
+.pokemon-type {
+    font-size: 10px;
+  }
+
+  .container {
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    text-align: center;
+    font-size: 55px;;
+  }
+  .card {
+    background-color: #9a7f7f;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(194, 60, 140, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+ 
+  #pokedex {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 40px;
+  }
+  .favorite-button {
+    position: absolute; /* Agregamos posición absoluta */
+     top: 10px; /* Ajustamos la posición desde arriba */
+    right: 10px; /* Ajustamos la posición desde la derecha */
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1; /* Aseguramos que el botón esté por encima del contenido */
+}
+  
+  .heart {
+    font-size: 30px;
+    color: rgb(251, 220, 236);
+    transition: color 0.3s;
+  }
+  
+  .favorite-button.favorito .heart {
+    color: rgb(229, 46, 61);
+  }
+  
+ 
+  @keyframes bounce {
+    20% {
+      transform: translateY(-6px);
+    }
+    40% {
+      transform: translateY(0px);
+    }
+    60% {
+      transform: translateY(-2px);
+    }
+    80% {
+      transform: translateY(-0px);
+    }
+  }
+
+
